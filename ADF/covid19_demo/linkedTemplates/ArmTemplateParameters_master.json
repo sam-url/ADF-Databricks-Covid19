@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "covid-reporting-adf-databricks-sam"
+        },
+        "ls_adls_covid19reportingsamdl_accountKey": {
+            "value": ""
+        },
+        "ls_ablob_covidreportingsasam_connectionString": {
+            "value": ""
+        },
+        "ls_sql_covid_db_connectionString": {
+            "value": ""
+        },
+        "ls_adls_covid19reportingsamdl_properties_typeProperties_url": {
+            "value": "https://covid19reportingsamdl.dfs.core.windows.net/"
+        },
+        "ls_https_ecdc_properties_typeProperties_url": {
+            "value": "@{linkedService().BaseURL}"
+        },
+        "ls_covid_report_databricks_properties_typeProperties_existingClusterId": {
+            "value": "0506-204225-ds8ja61q"
+        },
+        "containerUri": {
+            "value": ""
+        },
+        "containerSasToken": {
+            "value": ""
+        }
+    }
+}
